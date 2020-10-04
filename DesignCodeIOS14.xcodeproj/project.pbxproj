@@ -13,6 +13,13 @@
 		2AD2A109252968CC0028A019 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AD2A108252968CC0028A019 /* Preview Assets.xcassets */; };
 		2AD2A114252968CC0028A019 /* DesignCodeIOS14Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2A113252968CC0028A019 /* DesignCodeIOS14Tests.swift */; };
 		2AD2A11F252968CC0028A019 /* DesignCodeIOS14UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2A11E252968CC0028A019 /* DesignCodeIOS14UITests.swift */; };
+		2AD2A13025296C640028A019 /* CurseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2A12F25296C640028A019 /* CurseRow.swift */; };
+		2AD2A13525296E810028A019 /* CurseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2A13425296E810028A019 /* CurseView.swift */; };
+		2AD2A13A25296F2D0028A019 /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2A13925296F2D0028A019 /* Sidebar.swift */; };
+		2AD2A13F252973C00028A019 /* CurseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2A13E252973C00028A019 /* CurseItem.swift */; };
+		2AD2A155252975540028A019 /* CurseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2A154252975540028A019 /* CurseList.swift */; };
+		2AD2A15B252989160028A019 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2A15A252989160028A019 /* Course.swift */; };
+		2AD2A1632529C3BA0028A019 /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2A1622529C3BA0028A019 /* CloseButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +52,13 @@
 		2AD2A11A252968CC0028A019 /* DesignCodeIOS14UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignCodeIOS14UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AD2A11E252968CC0028A019 /* DesignCodeIOS14UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignCodeIOS14UITests.swift; sourceTree = "<group>"; };
 		2AD2A120252968CC0028A019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AD2A12F25296C640028A019 /* CurseRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurseRow.swift; sourceTree = "<group>"; };
+		2AD2A13425296E810028A019 /* CurseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurseView.swift; sourceTree = "<group>"; };
+		2AD2A13925296F2D0028A019 /* Sidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
+		2AD2A13E252973C00028A019 /* CurseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurseItem.swift; sourceTree = "<group>"; };
+		2AD2A154252975540028A019 /* CurseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurseList.swift; sourceTree = "<group>"; };
+		2AD2A15A252989160028A019 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		2AD2A1622529C3BA0028A019 /* CloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +110,12 @@
 			isa = PBXGroup;
 			children = (
 				2AD2A101252968C90028A019 /* DesignCodeIOS14App.swift */,
-				2AD2A103252968C90028A019 /* ContentView.swift */,
+				2AD2A159252988E30028A019 /* Model */,
+				2AD2A143252974790028A019 /* Navigation */,
+				2AD2A147252974990028A019 /* items */,
+				2AD2A13425296E810028A019 /* CurseView.swift */,
+				2AD2A1622529C3BA0028A019 /* CloseButton.swift */,
+				2AD2A154252975540028A019 /* CurseList.swift */,
 				2AD2A105252968CC0028A019 /* Assets.xcassets */,
 				2AD2A10A252968CC0028A019 /* Info.plist */,
 				2AD2A107252968CC0028A019 /* Preview Content */,
@@ -128,6 +147,32 @@
 				2AD2A120252968CC0028A019 /* Info.plist */,
 			);
 			path = DesignCodeIOS14UITests;
+			sourceTree = "<group>";
+		};
+		2AD2A143252974790028A019 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				2AD2A13925296F2D0028A019 /* Sidebar.swift */,
+				2AD2A103252968C90028A019 /* ContentView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		2AD2A147252974990028A019 /* items */ = {
+			isa = PBXGroup;
+			children = (
+				2AD2A12F25296C640028A019 /* CurseRow.swift */,
+				2AD2A13E252973C00028A019 /* CurseItem.swift */,
+			);
+			path = items;
+			sourceTree = "<group>";
+		};
+		2AD2A159252988E30028A019 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2AD2A15A252989160028A019 /* Course.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +304,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AD2A15B252989160028A019 /* Course.swift in Sources */,
+				2AD2A13A25296F2D0028A019 /* Sidebar.swift in Sources */,
+				2AD2A155252975540028A019 /* CurseList.swift in Sources */,
+				2AD2A1632529C3BA0028A019 /* CloseButton.swift in Sources */,
+				2AD2A13F252973C00028A019 /* CurseItem.swift in Sources */,
 				2AD2A104252968C90028A019 /* ContentView.swift in Sources */,
 				2AD2A102252968C90028A019 /* DesignCodeIOS14App.swift in Sources */,
+				2AD2A13025296C640028A019 /* CurseRow.swift in Sources */,
+				2AD2A13525296E810028A019 /* CurseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
